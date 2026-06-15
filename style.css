@@ -1,0 +1,182 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#030712;
+    overflow:hidden;
+}
+
+/* Particle Background */
+#particles{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+
+/* Main Container */
+.container{
+    width:450px;
+    max-height:80vh;
+    overflow-y:auto;
+
+    padding:35px;
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(12px);
+
+    border:2px solid #00ffff;
+
+    box-shadow:
+    0 0 10px #00ffff,
+    0 0 25px #00ffff,
+    0 0 50px rgba(0,255,255,0.6),
+    inset 0 0 15px rgba(0,255,255,0.4);
+
+    animation:floatBox 3s infinite alternate;
+}
+
+/* Floating Animation */
+@keyframes floatBox{
+    from{
+        transform:translateY(0px);
+    }
+    to{
+        transform:translateY(-8px);
+    }
+}
+
+/* Heading */
+h2{
+    text-align:center;
+    color:#00ffff;
+    margin-bottom:25px;
+
+    text-shadow:
+    0 0 10px #00ffff,
+    0 0 25px #00ffff;
+}
+
+/* Welcome Text */
+.welcome{
+    text-align:center;
+    color:white;
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+/* Input Fields */
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group input{
+    width:100%;
+    padding:12px;
+    background:transparent;
+    border:none;
+    outline:none;
+    color:white;
+    border-bottom:2px solid #00ffff;
+}
+
+.input-group input::placeholder{
+    color:#bdbdbd;
+}
+
+/* Buttons */
+.btn{
+    width:100%;
+    padding:12px;
+    border-radius:25px;
+    border:2px solid #00ffff;
+    background:transparent;
+    color:#00ffff;
+    cursor:pointer;
+    transition:0.3s;
+    margin-top:10px;
+}
+
+.btn:hover{
+    background:#00ffff;
+    color:black;
+
+    box-shadow:
+    0 0 15px #00ffff,
+    0 0 35px #00ffff;
+}
+
+/* Links */
+.link{
+    margin-top:20px;
+    text-align:center;
+    color:white;
+}
+
+.link a{
+    color:#00ffff;
+    text-decoration:none;
+}
+
+/* Messages */
+.message{
+    margin-top:15px;
+    text-align:center;
+    color:#00ffff;
+}
+
+/* Dashboard Cards */
+.card{
+    margin:15px 0;
+    padding:15px;
+    border-radius:12px;
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(0,255,255,0.3);
+
+    color:white;
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 10px #00ffff,
+    0 0 25px rgba(0,255,255,0.6);
+
+    border-color:#00ffff;
+}
+
+.card h3{
+    color:#00ffff;
+    margin-bottom:8px;
+}
+
+.card p{
+    color:white;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width:6px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#00ffff;
+    border-radius:10px;
+}
